@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://tincan-about.netlify.app/tincan-icon-128.png" alt="TinCan Logo" width="96" height="96" />
+<img src="https://tincan.rdskills-lab.com/tincan-icon-128.png" alt="TinCan Logo" width="96" height="96" />
 
 # TinCan — Native Android AI Agent & Coding Workspace
 
@@ -11,16 +11,16 @@
 [![Platform Android](https://img.shields.io/badge/Android-7.0%2B%20(ARM64)-3ddc84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/radianceskills-dev/tincan-releases/releases/latest)
 [![GitHub Stars](https://img.shields.io/github/stars/radianceskills-dev/tincan-releases?style=for-the-badge&color=f59e0b)](https://github.com/radianceskills-dev/tincan-releases/stargazers)
 
-[**🌐 Official Website**](https://tincan-about.netlify.app) · [**✦ Interactive 3D Tour**](https://tincan-about.netlify.app/experience/) · [**📦 All Releases**](https://github.com/radianceskills-dev/tincan-releases/releases) · [**🐛 Report Issue / Request Feature**](https://github.com/radianceskills-dev/tincan-releases/issues)
+[**🌐 Official Website**](https://tincan.rdskills-lab.com) · [**✦ Interactive 3D Tour**](https://tincan.rdskills-lab.com/experience/) · [**📦 All Releases**](https://github.com/radianceskills-dev/tincan-releases/releases) · [**🐛 Report Issue / Request Feature**](https://github.com/radianceskills-dev/tincan-releases/issues)
 
 ---
 
-### ⬇️ Direct One-Click Downloads (Latest: `v2.15.1` · ARM64)
+### ⬇️ Direct One-Click Downloads (Latest: `v2.23.9` · ARM64)
 
 | Package Option | Direct Download Link | Size | When to Use |
 | :--- | :--- | :--- | :--- |
-| **📱 Direct Android APK** | [**⬇️ Download `TinCan-v2.apk`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.15.1/TinCan-v2.apk) | `59.6 MB` | Standard direct installation on Android 7.0+ (`arm64-v8a`) |
-| **📦 ZIP Archive (APK Inside)** | [**⬇️ Download `TinCan-v2-Android-APK.zip`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.15.1/TinCan-v2-Android-APK.zip) | `57.2 MB` | Use if Chrome on Android pauses at 100% while scanning `.apk` files |
+| **📱 Direct Android APK** | [**⬇️ Download `TinCan-v2.apk`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9/TinCan-v2.apk) | `60.0 MB` | Standard direct installation on Android 7.0+ (`arm64-v8a`) |
+| **📦 ZIP Archive (APK Inside)** | [**⬇️ Download `TinCan-v2-Android-APK.zip`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9/TinCan-v2-Android-APK.zip) | `57.4 MB` | Use if Chrome on Android pauses at 100% while scanning `.apk` files |
 
 > ⭐ **If TinCan helps your mobile workflow, please click the [Star](https://github.com/radianceskills-dev/tincan-releases) button at the top right!** Stars help other Android developers, self-hosters, and AI engineers discover the project.
 
@@ -29,7 +29,7 @@
 ---
 
 <div align="center">
-  <img src="https://tincan-about.netlify.app/og-card.png" alt="TinCan — Android-Native AI Agent Harness" width="100%" />
+  <img src="https://tincan.rdskills-lab.com/og-card.png" alt="TinCan — Android-Native AI Agent Harness" width="100%" />
 </div>
 
 ---
@@ -105,14 +105,14 @@ Most mobile AI apps trap your model inside a text bubble. You can't execute shel
 
 ## 📲 Installation & Verification
 
-1. Download either [**`TinCan-v2.apk`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.15.1/TinCan-v2.apk) or [**`TinCan-v2-Android-APK.zip`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.15.1/TinCan-v2-Android-APK.zip) (if downloading the `.zip`, extract `TinCan v2.apk` first).
+1. Download either [**`TinCan-v2.apk`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9/TinCan-v2.apk) or [**`TinCan-v2-Android-APK.zip`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9/TinCan-v2-Android-APK.zip) (if downloading the `.zip`, extract `TinCan v2.apk` first).
 2. Open the `.apk` file on your Android device (requires **Android 7.0+** on **ARM64 / `arm64-v8a`**).
 3. Verify your download checksum (optional):
    ```text
-   Version:  2.15.1 (versionCode 64)
+   Version:  2.23.9 (versionCode 84)
    Package:  com.shunmin.tincan
-   APK SHA-256: dcd352af6b6b37ad9de0619c83f09ad4344422032e45a207565442cdba2c99e0
-   ZIP SHA-256: ce4a59161fdad7948ba43bbde0175b476175314e9cbde550d1f9b8a95d0569d1
+   APK SHA-256: 3aae9aa6773d13752f58fc9a769cdad646682c73e3e57cabe1b29f93e40d2a13
+   ZIP SHA-256: 81bacfbc6a3f65c1aee496c6e6f29258e631ba4f30dca9269faf960de80db3de
    ```
 
 ---
@@ -127,7 +127,7 @@ Most mobile AI apps trap your model inside a text bubble. You can't execute shel
 
 **Built for developers, self-hosters, and power users who want a real AI engineering workspace in their pocket.**
 
-[**⬇️ Download Latest APK (`v2.15.1`)**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.15.1/TinCan-v2.apk) · [**📦 Download ZIP Archive**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.15.1/TinCan-v2-Android-APK.zip) · [**🌐 Visit Website**](https://tincan-about.netlify.app)
+[**⬇️ Download Latest APK (`v2.23.9`)**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9/TinCan-v2.apk) · [**📦 Download ZIP Archive**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9/TinCan-v2-Android-APK.zip) · [**🌐 Visit Website**](https://tincan.rdskills-lab.com)
 
 If you find TinCan useful, please give this repository a ⭐ **Star**!
 
