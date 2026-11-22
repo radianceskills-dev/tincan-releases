@@ -1,134 +1,126 @@
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img alt="TinCan — the Android AI agent workbench by Radiance Skills Lab" src="assets/hero-light.svg" width="1280" height="320">
+</picture>
 
-<img src="https://tincan.rdskills-lab.com/tincan-icon-128.png" alt="TinCan Logo" width="96" height="96" />
+<p align="center">
+  <a href="https://github.com/radianceskills-dev/tincan-releases/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/radianceskills-dev/tincan-releases?style=flat-square&color=94b8e8&label=release" height="20"></a>
+  <a href="https://github.com/radianceskills-dev/tincan-releases/releases"><img alt="Total downloads" src="https://img.shields.io/github/downloads/radianceskills-dev/tincan-releases/total?style=flat-square&color=d3f58a&label=downloads" height="20"></a>
+  <a href="https://github.com/radianceskills-dev/tincan-releases/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/radianceskills-dev/tincan-releases?style=flat-square&color=303640&label=stars" height="20"></a>
+  <img alt="Platform: Android 7.0+ ARM64" src="https://img.shields.io/badge/Android_7.0%2B-ARM64-303640?style=flat-square&logo=android&logoColor=d3f58a" height="20">
+  <img alt="Price: free" src="https://img.shields.io/badge/price-free-303640?style=flat-square" height="20">
+</p>
 
-# TinCan — Native Android AI Agent & Coding Workspace
+**TinCan turns an Android phone or tablet into a self-contained AI engineering workbench.** It pairs a real on-device Alpine Linux sandbox and multi-server SSH with MCP tools, reusable skills, offline GGUF models, and zero-context-loss switching across cloud OAuth and bring-your-own-key providers — free, ad-free, and local-first.
 
-**Run a local Alpine Linux sandbox, manage remote SSH servers, connect MCP tools, run offline `.gguf` & Whisper models, and switch OAuth accounts without losing your chat history—natively on your phone.**
+<p align="center">
+  <a href="https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix.apk"><img alt="Download TinCan APK" src="https://img.shields.io/badge/Download_APK-2.23.9--fix-d3f58a?style=for-the-badge&logo=android&logoColor=17210c&labelColor=191c22" height="34"></a>
+</p>
 
-[![Latest Release](https://img.shields.io/github/v/release/radianceskills-dev/tincan-releases?style=for-the-badge&label=Latest%20Release&color=10b981)](https://github.com/radianceskills-dev/tincan-releases/releases/latest)
-[![Total Downloads](https://img.shields.io/github/downloads/radianceskills-dev/tincan-releases/total?style=for-the-badge&label=Downloads&color=38bdf8)](https://github.com/radianceskills-dev/tincan-releases/releases/latest)
-[![Platform Android](https://img.shields.io/badge/Android-7.0%2B%20(ARM64)-3ddc84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/radianceskills-dev/tincan-releases/releases/latest)
-[![GitHub Stars](https://img.shields.io/github/stars/radianceskills-dev/tincan-releases?style=for-the-badge&color=f59e0b)](https://github.com/radianceskills-dev/tincan-releases/stargazers)
+<p align="center">
+  <a href="https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix-Android-APK.zip">ZIP archive</a> ·
+  <a href="https://github.com/radianceskills-dev/tincan-releases/releases">All releases</a> ·
+  <a href="https://tincan.rdskills-lab.com/">Website</a> ·
+  <a href="https://tincan.rdskills-lab.com/experience/">Interactive tour</a>
+</p>
 
-[**🌐 Official Website**](https://tincan.rdskills-lab.com) · [**✦ Interactive 3D Tour**](https://tincan.rdskills-lab.com/experience/) · [**📦 All Releases**](https://github.com/radianceskills-dev/tincan-releases/releases) · [**🐛 Report Issue / Request Feature**](https://github.com/radianceskills-dev/tincan-releases/issues)
+## Current Release
 
----
+| Can label | |
+| :-- | :-- |
+| **Version** | 2.23.9-fix |
+| **Build** | 84 · `com.shunmin.tincan` |
+| **Net weight** | APK 60.0 MB · ZIP 57.4 MB |
+| **Requires** | Android 7.0+ (API 24) · ARM64 (`arm64-v8a`) |
+| **Seal (SHA-256)** | `d8062c61…de893c30` · full checksums below |
 
-### ⬇️ Direct One-Click Downloads (Latest: `v2.23.9` · ARM64)
+## What’s Inside
 
-| Package Option | Direct Download Link | Size | When to Use |
-| :--- | :--- | :--- | :--- |
-| **📱 Direct Android APK** | [**⬇️ Download `TinCan-v2-fix.apk`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix.apk) | `60.0 MB` | Standard direct installation on Android 7.0+ (`arm64-v8a`) |
-| **📦 ZIP Archive (APK Inside)** | [**⬇️ Download `TinCan-v2-fix-Android-APK.zip`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix-Android-APK.zip) | `57.4 MB` | Use if Chrome on Android pauses at 100% while scanning `.apk` files |
+| | |
+| :-- | :-- |
+| 🐧 **Sandbox & SSH** | On-device Alpine Linux with `/mnt/shared` storage access, plus multi-server SSH and durable background jobs (Conch) that survive disconnects. |
+| 🧠 **Models & routing** | Offline GGUF inference (llama.cpp) and seamless switching across ChatGPT/OpenAI, Antigravity, Puter, OpenRouter OAuth and custom BYOK keys — in the same thread, no context loss. |
+| 🔌 **MCP & skills** | Model Context Protocol servers (HTTP/SSE and stdio) and installable, pinnable `skills.sh` workflows. |
+| 🎛️ **Modes & memory** | Plan (read-only), Build, and Pro multi-pass reasoning; two-tier persistent memory and full-text past-conversation search. |
+| 🎙️ **Multimodal** | On-device Whisper speech-to-text, system/AI text-to-speech, PDF page-range inspection, and video frame slicing. |
+| ⏱️ **Automation** | Cron background tasks, in-chat execution loops, and interactive HTML/JS artifacts rendered right in chat. |
 
-> ⭐ **If TinCan helps your mobile workflow, please click the [Star](https://github.com/radianceskills-dev/tincan-releases) button at the top right!** Stars help other Android developers, self-hosters, and AI engineers discover the project.
+<details>
+<summary><b>Install on Android</b></summary>
 
-</div>
+<br>
 
----
+1. Download [`TinCan-v2-fix.apk`](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix.apk), or the [ZIP archive](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix-Android-APK.zip) and extract `TinCan-v2-fix.apk`.
+2. Tap the APK. If prompted, allow installs from your browser or file manager (**Install unknown apps**).
+3. Open TinCan and pick a provider: sign in with OAuth, paste a BYOK key, or load a local GGUF model.
 
-<div align="center">
-  <img src="https://tincan.rdskills-lab.com/og-card.png" alt="TinCan — Android-Native AI Agent Harness" width="100%" />
-</div>
+> This is a fix re-spin of 2.23.9 (same `versionCode` 84), so it installs as an update over an existing 2.23.9 rather than a version bump.
 
----
+</details>
 
-## 🚀 Why TinCan?
+<details>
+<summary><b>Verify Your Download</b></summary>
 
-Most mobile AI apps trap your model inside a text bubble. You can't execute shell scripts, you can't inspect device files, you can't SSH into your servers, and if your free-tier account hits a rate limit, switching accounts wipes your conversation context.
+<br>
 
-**TinCan (`com.shunmin.tincan`) is a Claude Code-level agentic workspace built natively for Android:**
+```text
+Version:  2.23.9-fix (versionCode 84)
+Package:  com.shunmin.tincan
+APK:      TinCan-v2-fix.apk (59,982,345 bytes)
+SHA-256:  d8062c61b01922102f22d090288b9290dc43c77e20789f97d7539c47de893c30
 
-| Capability | Standard Mobile Chat Apps | **TinCan (Android Agent Workspace)** |
-| :--- | :---: | :--- |
-| **Local Linux Execution** | ❌ None | ✅ **On-device Alpine Linux sandbox (`proot`)** with `apk` package manager UI & `/mnt/shared` storage mount |
-| **Remote Server Access** | ❌ None | ✅ **Built-in multi-host SSH client** + durable **Conch** background jobs that survive disconnects |
-| **OAuth Account Switching** | ❌ New account = new chat | ✅ **Switch ChatGPT / Antigravity / Puter / OpenRouter OAuth mid-thread** and resume the exact same conversation |
-| **Offline On-Device AI** | ❌ Cloud-only | ✅ **Local `llama.cpp` (`.gguf` + `mmproj` vision)** & offline **Local Whisper** speech-to-text |
-| **External Tools & Skills** | ❌ Closed ecosystem | ✅ **Model Context Protocol (MCP)** client (HTTP/SSE + OAuth) & direct **`skills.sh`** skill installer |
-| **Reasoning & Critique** | ❌ Single-pass replies | ✅ **Pro Mode** (`Initial Answer → Challenge → Final Answer → Implement → Loop`), **Plan Mode**, & **Build Mode** |
-| **Voice & Multimodal Profiles** | ❌ Single fixed engine | ✅ **Multi-provider saved profiles** for STT (editable voice draft), TTS (Android + AI TTS), and Image Gen/Edit |
-| **Automation & Memory** | ❌ Manual prompts only | ✅ **5-field Cron background tasks**, in-chat **Loops**, two-tier **Persistent Memory**, & **Semantic RAG** |
+ZIP:      TinCan-v2-fix-Android-APK.zip (57,440,996 bytes)
+SHA-256:  6400f479712e04d2259ec9f9f08dbc311e4b27add9fd76bab12e886d4067cdd1
+```
 
----
+```sh
+sha256sum TinCan-v2-fix.apk
+```
 
-## 🛠️ Complete Feature Reference
+</details>
 
-### 1. Code Execution & Infrastructure (`Linux Sandbox` + `SSH`)
-- **On-Device Alpine Linux Sandbox (`proot`):** Execute shell commands, run Python/Node/Bash scripts, manage Alpine packages via a dedicated UI, and configure custom environment variables.
-- **Shared Android Storage (`/mnt/shared`):** Optionally mount your device's shared storage directly inside the Linux sandbox to inspect, generate, or process local files.
-- **Multi-Host Remote SSH:** Connect your home lab, VPS, or cloud servers over SSH. Your agent can run remote commands and `read`, `write`, `edit`, `grep`, and `glob` remote files directly from chat.
-- **Durable Background Jobs (Conch):** Launch long-running shell commands that continue executing in the background even if your mobile network drops.
+<details>
+<summary><b>Full Capability List</b></summary>
 
-### 2. Models, OAuth & Seamless Account-Switch Resume
-- **One-Tap OAuth Sign-In:** Built-in OAuth support for **OpenAI (ChatGPT)**, **Antigravity / Google**, **Puter**, and **OpenRouter**—works even on free tiers.
-- **Zero-Loss Account Switching:** Because conversations and memory live locally on your phone, hitting a usage cap on one account lets you switch OAuth accounts (or swap to an API key / local model) and **resume the exact same conversation thread**.
-- **On-Device Offline LLM Inference (`llama.cpp`):** Run quantized `.gguf` chat models and multimodal vision (`mmproj`) projectors 100% offline on your Android CPU/GPU.
-- **BYOK & Custom Endpoints:** Add multiple API keys, custom base URLs, OpenAI Responses API endpoints, service-tier selection, model aliases, and granular sampler controls (`thinking_budget`, `temperature`, `top_p`, `min_p`, `max_tokens`).
+<br>
 
-### 3. Agent Modes & Deliberate Reasoning
-- **Chat Mode:** Fast, tool-enabled conversational assistant.
-- **Plan Mode (Read-Only):** Safely inspect files, servers, and architecture without modifying any files or external state.
-- **Build / Agent Mode:** Autonomous multi-step execution across shell, files, web, and MCP tools.
-- **Pro Mode (5-Stage Self-Critique Loop):**
-  ```text
-  01 Initial Answer  ──►  02 Challenge Assumptions  ──►  03 Final Answer  ──►  04 Implement  ──►  05 Loop ↺
-  ```
-- **Agent & Prompt Templates:** Built-in and custom templates for software engineering, DevOps, research, data analysis, and office workflows, plus reusable prompt templates with variables.
+- Embedded Linux sandbox with full device-storage access (`/mnt/shared`).
+- Multi-server SSH manager with durable background execution (Conch).
+- Zero-context-loss switching across OAuth, BYOK, and offline GGUF models in one thread.
+- MCP client with HTTP/SSE and stdio transports.
+- `skills.sh` manager with pinned versions and integrity checks.
+- Plan, Build, and Pro modes; two-tier memory; cron tasks and loops.
+- Interactive artifacts: HTML/CSS/JS dashboards, diagrams, and calculators in chat.
+- On-device Whisper STT and system/AI TTS.
+- PDF and image inspection; video frame slicing.
+- Sandbox exports, attachment handling, and backup inclusion.
+- Multilingual UI: English, Arabic (RTL), Urdu (RTL), Hindi, Spanish, French, Chinese.
 
-### 4. MCP Servers, `skills.sh` & Web Research
-- **Model Context Protocol (MCP) Client:** Connect pre-configured or custom HTTP/SSE MCP servers with custom headers and OAuth client credentials.
-- **Direct `skills.sh` Integration:** Browse, install, update, and manage modular agent skills directly inside the app.
-- **Web Search & Full-Page Web Fetch:** Give any cloud or local model live web search and clean Markdown extraction from URLs.
+</details>
 
-### 5. Multi-Profile Voice (Local Whisper), TTS, Vision & Media
-- **Multi-Provider Profiles:** Save and switch between multiple provider profiles for **Audio Transcription (STT)**, **Text-to-Speech (TTS)**, and **Image Generation**.
-- **Audio Transcription into Editable Drafts:** Record speech using offline **Local Whisper** models or cloud STT providers. Transcripts always land in an editable draft first—never sent automatically by mistake.
-- **Read Aloud (Android System TTS + AI TTS):** Uses zero-latency Android system TTS by default, with optional custom AI TTS profiles.
-- **Image Generation & Reference Editing:** Generate images from text prompts or attach reference images in chat to guide visual edits.
-- **Vision Bridge (Image Transcription):** Automatically describe attached images using a dedicated vision model when chatting with a text-only LLM.
-- **Video Frame Slicer & PDF Page Selector:** Slice videos by time range/interval and preview/select specific PDF pages before sending.
+<details>
+<summary><b>AI Providers</b></summary>
 
-### 6. Two-Tier Persistent Memory, Semantic RAG & Automation
-- **Two-Tier Memory Architecture:** Combines an always-injected **Active Memory** core with a searchable **Memory Files** database (`create`, `read`, `edit`, `search`, `delete`).
-- **Semantic RAG Conversation Search:** Search across all past conversations using keywords or vector embeddings.
-- **Working Memory & Context Compaction:** Real-time token/cost breakdown, automatic context compaction, and durable bounded slices for large tool outputs.
-- **5-Field Cron Tasks & In-Chat Loops:** Schedule recurring background tasks with standard cron expressions and notifications, or run timed autonomous loops (`10s` to `7d` intervals) inside an active thread.
+<br>
 
-### 7. Collaboration, Portability & Network Privacy
-- **Whole-Conversation Sharing & Branching Forks:** Share complete conversation branches externally with full context, or fork any conversation to explore a different approach without altering the original.
-- **ChatGPT & Claude History Import:** Import your existing conversation exports from ChatGPT and Claude, or configure automated local TinCan backups.
-- **HTTP & SOCKS Proxy Support:** Route all app and model traffic through custom HTTP or SOCKS proxies with authentication and bypass rules.
+- **OAuth sign-in:** ChatGPT/OpenAI, Antigravity, Puter, OpenRouter.
+- **Bring your own key:** any HTTPS OpenAI-compatible endpoint (OpenRouter, OpenAI, and others).
+- **Offline:** local GGUF models via llama.cpp and on-device Whisper — no network, no markup.
 
----
+</details>
 
-## 📲 Installation & Verification
+## Links
 
-1. Download either [**`TinCan-v2-fix.apk`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix.apk) or [**`TinCan-v2-fix-Android-APK.zip`**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix-Android-APK.zip) (if downloading the `.zip`, extract `TinCan-v2-fix.apk` first).
-2. Open the `.apk` file on your Android device (requires **Android 7.0+** on **ARM64 / `arm64-v8a`**).
-3. Verify your download checksum (optional):
-   ```text
-   Version:  2.23.9 (versionCode 84)
-   Package:  com.shunmin.tincan
-   APK SHA-256: d8062c61b01922102f22d090288b9290dc43c77e20789f97d7539c47de893c30
-   ZIP SHA-256: 6400f479712e04d2259ec9f9f08dbc311e4b27add9fd76bab12e886d4067cdd1
-   ```
-
----
-
-## 🔍 Search Keywords & Topics
-
-`android ai agent` · `claude code android` · `mobile coding agent` · `mcp client android` · `model context protocol mobile` · `alpine linux sandbox android` · `proot linux ai agent` · `ssh ai agent` · `local llm android gguf` · `llama.cpp android` · `offline whisper android` · `chatgpt oauth android` · `antigravity oauth` · `puter ai` · `openrouter android client` · `skills.sh`
+| | |
+| :-- | :-- |
+| 🌐 **Website** | [tincan.rdskills-lab.com](https://tincan.rdskills-lab.com/) |
+| 🧭 **Interactive tour** | [tincan.rdskills-lab.com/experience](https://tincan.rdskills-lab.com/experience/) |
+| ⭐ **Reviews** | [Read & share reviews](https://tincan.rdskills-lab.com/review/) |
+| 🧪 **Radiance Skills Lab** | [rdskills-lab.com](https://rdskills-lab.com/) |
+| ✉️ **Support** | [support@rdskills-lab.com](mailto:support@rdskills-lab.com) |
 
 ---
 
-<div align="center">
-
-**Built for developers, self-hosters, and power users who want a real AI engineering workspace in their pocket.**
-
-[**⬇️ Download Latest APK (`v2.23.9`)**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix.apk) · [**📦 Download ZIP Archive**](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix-Android-APK.zip) · [**🌐 Visit Website**](https://tincan.rdskills-lab.com)
-
-If you find TinCan useful, please give this repository a ⭐ **Star**!
-
-</div>
+<p align="center">
+  <sub>Free · ad-free · local-first — sealed with care by <a href="https://rdskills-lab.com/">Radiance Skills Lab</a> 🥫</sub>
+</p>
