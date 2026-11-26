@@ -14,11 +14,11 @@
 **TinCan turns an Android phone or tablet into a self-contained AI engineering workbench.** It pairs a real on-device Alpine Linux sandbox and multi-server SSH with MCP tools, reusable skills, offline GGUF models, and zero-context-loss switching across cloud OAuth and bring-your-own-key providers — free, ad-free, and local-first.
 
 <p align="center">
-  <a href="https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix.apk"><img alt="Download TinCan APK" src="https://img.shields.io/badge/Download_APK-2.23.9--fix-d3f58a?style=for-the-badge&logo=android&logoColor=17210c&labelColor=191c22" height="34"></a>
+  <a href="https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.10/TinCan-v2.apk"><img alt="Download TinCan APK" src="https://img.shields.io/badge/Download_APK-2.23.10-d3f58a?style=for-the-badge&logo=android&logoColor=17210c&labelColor=191c22" height="34"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix-Android-APK.zip">ZIP archive</a> ·
+  <a href="https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.10/TinCan-v2-Android-APK.zip">ZIP archive</a> ·
   <a href="https://github.com/radianceskills-dev/tincan-releases/releases">All releases</a> ·
   <a href="https://tincan.rdskills-lab.com/">Website</a> ·
   <a href="https://tincan.rdskills-lab.com/experience/">Interactive tour</a>
@@ -28,11 +28,11 @@
 
 | Can label | |
 | :-- | :-- |
-| **Version** | 2.23.9-fix |
-| **Build** | 84 · `com.shunmin.tincan` |
+| **Version** | 2.23.10 |
+| **Build** | 85 · `com.shunmin.tincan` |
 | **Net weight** | APK 60.0 MB · ZIP 57.4 MB |
 | **Requires** | Android 7.0+ (API 24) · ARM64 (`arm64-v8a`) |
-| **Seal (SHA-256)** | `d8062c61…de893c30` · full checksums below |
+| **Seal (SHA-256)** | `036cde9b…01f46c79` · full checksums below |
 
 ## What’s Inside
 
@@ -50,11 +50,10 @@
 
 <br>
 
-1. Download [`TinCan-v2-fix.apk`](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix.apk), or the [ZIP archive](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.9-fix/TinCan-v2-fix-Android-APK.zip) and extract `TinCan-v2-fix.apk`.
+1. Download [`TinCan-v2.apk`](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.10/TinCan-v2.apk), or the [ZIP archive](https://github.com/radianceskills-dev/tincan-releases/releases/download/v2.23.10/TinCan-v2-Android-APK.zip) and extract `TinCan-v2.apk`.
 2. Tap the APK. If prompted, allow installs from your browser or file manager (**Install unknown apps**).
 3. Open TinCan and pick a provider: sign in with OAuth, paste a BYOK key, or load a local GGUF model.
 
-> This is a fix re-spin of 2.23.9 (same `versionCode` 84), so it installs as an update over an existing 2.23.9 rather than a version bump.
 
 </details>
 
@@ -64,17 +63,17 @@
 <br>
 
 ```text
-Version:  2.23.9-fix (versionCode 84)
+Version:  2.23.10 (versionCode 85)
 Package:  com.shunmin.tincan
-APK:      TinCan-v2-fix.apk (59,982,345 bytes)
-SHA-256:  d8062c61b01922102f22d090288b9290dc43c77e20789f97d7539c47de893c30
+APK:      TinCan-v2.apk (59,987,465 bytes)
+SHA-256:  036cde9b53dcd1179b35126e525a55fbef37f41f601bdbb09b7cb8b401f46c79
 
-ZIP:      TinCan-v2-fix-Android-APK.zip (57,440,996 bytes)
-SHA-256:  6400f479712e04d2259ec9f9f08dbc311e4b27add9fd76bab12e886d4067cdd1
+ZIP:      TinCan-v2-Android-APK.zip (57,445,319 bytes)
+SHA-256:  48f482c012789e18db3859703f62f75c118efecbaa87a503059bd09ff9f6d588
 ```
 
 ```sh
-sha256sum TinCan-v2-fix.apk
+sha256sum TinCan-v2.apk
 ```
 
 </details>
